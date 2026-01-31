@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Karachi Naseeb Biryani & BBQ Chichawatni</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<style>
+body {
+    font-family: 'Roboto', sans-serif;
+    margin:0;
+    padding:0;
+    background: linear-gradient(135deg,#111,#1a1a1a);
+    color:#fff;
+    overflow-x:hidden;
+}
+
+/* HEADER SECTION */
+header {
+    text-align:center;
+    padding:40px 20px;
+    background: linear-gradient(90deg,#ff416c,#ff4b2b);
+    color:white;
+    text-shadow:2px 2px 12px #000;
+}
+header h1 {
+    font-size:2.6em;
+    margin:0;
+    font-weight:bold;
+}
+
+/* NAVIGATION WITH LINES */
+nav {
+    display:flex;
+    justify-content:center;
+    flex-wrap: wrap; /* wrap on small screens */
+    gap:15px;
+    padding:15px 0;
+    border-bottom:2px solid #ffd700;
+    margin-bottom:20px;
+}
+nav a {
+    color:#ffd700;
+    text-decoration:none;
+    font-weight:bold;
+    font-size:1em;
+    padding:8px 12px;
+    transition:0.3s;
+    position:relative;
+}
+nav a:not(:last-child)::after {
+    content:"|";
+    color:#ffd700;
+    margin-left:8px;
+    position:absolute;
+    right:-12px;
+}
+nav a:hover {
+    color:#ff5733;
+    text-shadow:0 0 10px #ff5733;
+}
+
+/* RESPONSIVE NAVIGATION */
+@media(max-width:600px){
+    nav a {
+        font-size:0.95em;
+        padding:5px 6px;
+    }
+    nav a:not(:last-child)::after {
+        display:none; /* hide separators on small screens */
+    }
+}
+
+/* STORY SECTION */
+.story-section {
+    text-align:center;
+    padding:30px 20px;
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(5px);
+    border-radius:20px;
+    margin:0 auto 30px auto;
+    max-width:900px;
+    box-shadow:0 0 30px rgba(255,255,255,0.2);
+}
+.story-section p {
+    font-size:1.15em;
+    margin:10px 0;
+    color:#ffd700;
+}
+.story-section .humara-miyar {
+    font-size:1.3em;
+    font-weight:bold;
+    margin-top:10px;
+    color:#ffcc00;
+}
+
+/* HERO SECTION */
+.hero {
+    text-align:center;
+    padding:50px 20px;
+}
+.hero h2 {
+    font-size:2em;
+    margin-bottom:20px;
+    color:#ffd700;
+    text-shadow:2px 2px 10px #000;
+    animation: float 3s ease-in-out infinite alternate;
+}
+.hero p {
+    font-size:1.15em;
+    max-width:800px;
+    margin:auto;
+    line-height:1.6;
+    color:#eee;
+}
+.hero .order-btn {
+    display:inline-block;
+    margin-top:30px;
+    padding:15px 30px;
+    font-size:1.2em;
+    background: linear-gradient(45deg,#ff416c,#ff4b2b);
+    color:white;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:bold;
+    box-shadow:0 0 20px rgba(255,69,50,0.7);
+    transition:0.5s;
+}
+.hero .order-btn:hover {
+    transform:scale(1.1);
+    box-shadow:0 0 40px #ffd700;
+}
+
+/* SECTION STYLES */
+section {
+    padding:60px 20px;
+    max-width:1000px;
+    margin:auto;
+    border-radius:25px;
+    margin-bottom:50px;
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(5px);
+    box-shadow:0 0 40px rgba(255,255,255,0.2);
+    transition:0.5s;
+}
+section h2 {
+    font-size:2em;
+    text-align:center;
+    margin-bottom:20px;
+    color:#ffcc00;
+    text-shadow:2px 2px 8px #000;
+}
+section p {
+    font-size:1.1em;
+    text-align:center;
+    line-height:1.5;
+}
+
+/* FLOAT ANIMATION */
+@keyframes float {
+    0%{transform: translateY(0);}
+    50%{transform: translateY(-10px);}
+    100%{transform: translateY(0);}
+}
+
+/* FOOTER */
+footer {
+    text-align:center;
+    padding:25px 20px;
+    background:#111;
+    font-size:1em;
+    color:#fff;
+    border-top:3px solid #ffd700;
+}
+footer a {
+    color:#ffd700;
+    text-decoration:none;
+    font-weight:bold;
+}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+<h1>Karachi Naseeb Biryani & BBQ Chichawatni</h1>
+</header>
+
+<!-- NAVIGATION -->
+<nav>
+    <a href="index.html#home">Home</a>
+    <a href="menu.html#menu">Menu</a>
+    <a href="menu.html#deals">Deals</a>
+    <a href="more.html#more">About Us</a>
+    <a href="https://www.tiktok.com/@naseebbiryani" target="_blank"><i class="fab fa-tiktok"></i> TikTok</a>
+</nav>
+
+<!-- STORY SECTION -->
+<div class="story-section" id="home">
+<p>Started on 10 August 2025, ہم نے اپنی خاص ذائقے سے Chichawatni میں نام کمایا۔ Delicious taste, loved by everyone!</p>
+<div class="humara-miyar">ہماری معیار، ہماری پہچان</div>
+</div>
+
+<!-- HERO SECTION -->
+<section class="hero">
+<h2>مزیدار بریانی، شاندار باربی کیو</h2>
+<p>Welcome to Karachi Naseeb Biryani & BBQ Chichawatni! ہم اپنے تازہ اور معیاری اجزاء سے لاجواب ذائقہ تیار کرتے ہیں۔ Taste the flavors of our signature recipes made fresh daily.</p>
+<a href="https://wa.me/923006916797" target="_blank" class="order-btn">Order on WhatsApp: 0300-6916797</a>
+<p style="margin-top:15px; font-size:1em; color:#ffd700;">Address: 39 Chungi, College Road, Near Unique Public School, Chichawatni</p>
+</section>
+
+<!-- MENU DESCRIPTION -->
+<section id="menu">
+<h2>Our Specialties / ہماری خاص ڈشز</h2>
+<p>Chicken Biryani, Pulao, BBQ, and Sweets. ہر ڈش کو محبت اور معیار کے ساتھ بنایا گیا ہے تاکہ آپ کے ذائقے خوش ہوں۔</p>
+</section>
+
+<!-- DEALS DESCRIPTION -->
+<section id="deals">
+<h2>Special Deals / خصوصی پیشکش</h2>
+<p>Enjoy our weekend and weekday special combos with family and friends. ہفتہ اور اتوار کے اسپیشل ڈیلز، دوستوں اور خاندان کے ساتھ لطف اٹھائیں۔</p>
+</section>
+
+<!-- ABOUT US SECTION (BUTTON LINKS TO ALEHDA PAGE) -->
+<section id="aboutus">
+<h2>About Us / ہمارے بارے میں</h2>
+<p>Click the button below to learn more about us.</p>
+<div style="text-align:center; margin-top:20px;">
+<a href="about.html" class="order-btn">About Karachi Naseeb Biryani</a>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+Designed by Umer Mukhtar<br>
+<a href="https://wa.me/923198520363" target="_blank">0319-8520363 (WhatsApp)</a>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Karachi Naseeb Biryani & BBQ Chichawatni - Menu</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<style>
+body {
+    font-family: 'Roboto', sans-serif;
+    margin:0;
+    padding:0;
+    background: #0f0f0f;
+    color:#fff;
+}
+
+/* HEADER */
+header {
+    text-align:center;
+    padding:25px 15px;
+    background: linear-gradient(90deg,#ff416c,#ff4b2b);
+    color:white;
+    text-shadow:2px 2px 10px #000;
+    animation: headerGlow 2s infinite alternate;
+}
+@keyframes headerGlow {
+    0% { text-shadow:2px 2px 10px #000; }
+    100% { text-shadow:2px 2px 15px #ffd700; }
+}
+header h1 {
+    font-size:2em;
+    margin:0;
+    font-weight:bold;
+}
+
+/* NAVIGATION */
+nav {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
+    padding:10px 0;
+    border-bottom:2px solid #ffd700;
+    margin-bottom:15px;
+}
+nav a {
+    color:#ffd700;
+    text-decoration:none;
+    font-weight:bold;
+    font-size:1em;
+    padding:5px 10px;
+    border-radius:10px;
+    background: rgba(255,255,255,0.05);
+    transition:0.3s;
+}
+nav a:hover {
+    color:#ff5733;
+    text-shadow:0 0 12px #ff5733;
+}
+
+/* MENU SECTION */
+section {
+    max-width:95%;
+    margin:15px auto;
+    padding:20px;
+    background: linear-gradient(135deg,#1a1a1a,#111);
+    border-radius:20px;
+    box-shadow:0 0 25px rgba(255,255,255,0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 35px #ff5733;
+}
+
+/* SECTION TITLE */
+section h2 {
+    font-size:1.5em;
+    text-align:center;
+    margin-bottom:15px;
+    color:#ffcc00;
+    text-shadow:1px 1px 6px #000;
+}
+
+/* MENU CARD */
+.menu-card {
+    background: rgba(255,255,255,0.05);
+    padding:15px;
+    border-radius:15px;
+    margin-bottom:15px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.menu-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 25px #ffd700;
+}
+.menu-card p, .menu-card li {
+    margin:8px 0;
+    font-size:1em;
+    line-height:1.5;
+}
+.menu-card ul {
+    padding-left:20px;
+}
+
+/* ORDER BUTTON */
+.menu-card .order-btn {
+    display:block;
+    margin:15px auto 0 auto;
+    padding:12px 20px;
+    background: linear-gradient(45deg,#ff416c,#ff4b2b);
+    color:white;
+    border-radius:25px;
+    text-align:center;
+    font-weight:bold;
+    width:80%;
+    max-width:250px;
+    text-decoration:none;
+    transition:0.3s;
+    animation: btnPulse 2s infinite alternate;
+}
+.menu-card .order-btn:hover {
+    transform: scale(1.1);
+    box-shadow:0 0 20px #ffd700;
+}
+@keyframes btnPulse {
+    0% { box-shadow:0 0 5px #ff416c; }
+    100% { box-shadow:0 0 20px #ffd700; }
+}
+
+/* FOOTER */
+footer {
+    text-align:center;
+    padding:20px 15px;
+    background:#111;
+    font-size:1em;
+    color:#fff;
+    border-top:3px solid #ffd700;
+}
+footer a {
+    color:#ffd700;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+/* RESPONSIVE */
+@media(max-width:600px){
+    header h1 {
+        font-size:1.6em;
+    }
+    nav a {
+        font-size:0.95em;
+        padding:5px 8px;
+    }
+    section h2 {
+        font-size:1.3em;
+    }
+    .menu-card p, .menu-card li {
+        font-size:0.95em;
+    }
+}
+</style>
+</head>
+<body>
+
+<header>
+<h1>Karachi Naseeb Biryani & BBQ Chichawatni</h1>
+</header>
+
+<nav>
+    <a href="index.html#index">Home</a>
+    <a href="menu.html#menu">Menu</a>
+     <a href="more.html#more">About Us</a>
+     
+    <a href="#biryani">Biryani</a>
+    <a href="#pulao">Pulao</a>
+    <a href="#bbq">BBQ</a>
+    <a href="#specials">Deals</a>
+    <a href="#sweets">Sweets</a>
+    <a href="#drinks">Drinks</a>
+</nav>
+
+<!-- BIRYANI -->
+<section id="biryani">
+<h2>Biryani Menu / بریانی</h2>
+<div class="menu-card">
+<p>Chicken Biryani (Full) - Rs. 350</p>
+<p>Chicken Biryani (Half) - Rs. 170</p>
+<p>Simple Biryani (Full) - Rs. 250</p>
+<p>Simple Biryani (Half) - Rs. 130</p>
+<a href="https://wa.me/923006916797" target="_blank" class="order-btn">Order Now on WhatsApp</a>
+</div>
+</section>
+
+<!-- PULAO -->
+<section id="pulao">
+<h2>Pulao Menu / پلاو</h2>
+<div class="menu-card">
+<p>Chicken Pulao (Full) - Rs. 350</p>
+<p>Chicken Pulao (Half) - Rs. 170</p>
+<p>Simple Pulao (Full) - Rs. 250</p>
+<p>Simple Pulao (Half) - Rs. 130</p>
+<a href="https://wa.me/923006916797" target="_blank" class="order-btn">Order Now on WhatsApp</a>
+</div>
+</section>
+
+<!-- BBQ -->
+<section id="bbq">
+<h2>BBQ Menu / باربی کیو</h2>
+<div class="menu-card">
+<p>Tikka Boti - Rs. 150</p>
+<p>Achari Boti - Rs. 200</p>
+<p>Malai Boti - Rs. 300</p>
+<p>Kastori Boti - Rs. 350</p>
+<p>Tikka Chest Piece - Rs. 400</p>
+<p>Tikka Leg Piece - Rs. 350</p>
+<p>Chicken Kabab - Rs. 150</p>
+<p>Reshmi Kabab - Rs. 250</p>
+<p>Beef Kabab - Rs. 170</p>
+<p>Charga Full - Rs. 1800</p>
+<p>Grill Fish - Rs. 1400</p>
+<p>Special Platter - Rs. 2600</p>
+<a href="https://wa.me/923006916797" target="_blank" class="order-btn">Order BBQ Now</a>
+</div>
+</section>
+
+<!-- SPECIAL DEALS -->
+<section id="specials">
+<h2>Special Deals / خصوصی پیشکش</h2>
+
+<div class="menu-card">
+<p>Saturday & Sunday Special</p>
+<p>Leg Piece - Rs. 270</p>
+<p>Chest Piece - Rs. 350</p>
+<p>Grill Charga - Rs. 1450</p>
+<a href="https://wa.me/923006916797" target="_blank" class="order-btn">Order Weekend Specials</a>
+</div>
+
+<div class="menu-card">
+<p>Tuesday & Wednesday Deal (Rs. 2300)</p>
+<p>Includes: 1 Tikka Boti, 1 Malai Boti, 1KG Grill Fish, 1.5 KG Rice, Raita, Salad & 1.5L Cold Drink</p>
+<a href="https://wa.me/923006916797" target="_blank" class="order-btn">Order Weekday Deal</a>
+</div>
+
+<div class="menu-card">
+<p><strong>Deal 1 (Rs. 2200)</strong></p>
+<ul>
+<li>2 Kabab</li>
+<li>2 Tikka Boti</li>
+<li>1 Green Boti</li>
+<li>1 Chicken Pulao</li>
+<li>1 Full Charga</li>
+</ul>
+<a href="https://wa.me/923006916797" target="_blank" class="order-btn">Order Deal 1</a>
+</div>
+
+<div class="menu-card">
+<p><strong>Deal 3 (Rs. 3150)</strong></p>
+<ul>
+<li>1 Full Charga</li>
+<li>2 Kabab</li>
+<li>2 Tikka Boti</li>
+<li>1 Malai Boti</li>
+<li>1.5 KG Rice</li>
+<li>1.5 Litre Cold Drink</li>
+</ul>
+<a href="https://wa.me/923006916797" target="_blank" class="order-btn">Order Deal 3</a>
+</div>
+</section>
+
+<!-- SWEETS -->
+<section id="sweets">
+<h2>Sweets / میٹھا</h2>
+<div class="menu-card">
+<p>Zarda (Full) - Rs. 200</p>
+<p>Gulab Jamun (4 pcs) - Rs. 120</p>
+<p>Ras Malai (4 pcs) - Rs. 180</p>
+<p>Kheer (250ml) - Rs. 150</p>
+<a href="https://wa.me/923006916797" target="_blank" class="order-btn">Order Sweets</a>
+</div>
+</section>
+
+<!-- COLD DRINKS -->
+<section id="drinks">
+<h2>Cold Drinks / کولڈ ڈرنکس</h2>
+<div class="menu-card">
+<p>Pepsi (1.5L) - Rs. 250</p>
+<p>7up (1.5L) - Rs. 250</p>
+<p>Coca Cola (1.5L) - Rs. 270</p>
+<p>Mirinda (1.5L) - Rs. 250</p>
+<p>Mountain Dew (500ml) - Rs. 120</p>
+<p>Sprite (1.5L) - Rs. 250</p>
+<p>Fanta (1.5L) - Rs. 250</p>
+<p>Pakola Ice Cream Soda - Rs. 180</p>
+<a href="https://wa.me/923006916797" target="_blank" class="order-btn">Order Drinks</a>
+</div>
+</section>
+
+<footer>
+<h3>ہماری پہچان، ہمارا معیار</h3>
+Designed by Umer Mukhtar<br>
+<a href="https://wa.me/923198520363" target="_blank">0319-8520363 (WhatsApp)</a>
+</footer>
+
+</body>
+</html>
